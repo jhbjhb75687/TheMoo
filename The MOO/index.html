@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Moo - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="home-container">
+    <div class="title-section">
+      <h1 class="game-title">🐄 The Moo 🐄</h1>
+      <p class="subtitle">A game of mystery, cows, and aliens!</p>
+    </div>
+    <div class="buttons-section">
+      <button class="menu-button" onclick="navigateTo('rules.html')">Rules</button>
+      <button class="menu-button" onclick="alert('Game starting soon!')">Play</button>
+      <button class="menu-button" onclick="alert('Credits coming soon!')">Credits</button>
+    </div>
+  </div>
+
+  <!-- Cow sound -->
+  <audio id="cow-sound" src="cow-moo.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

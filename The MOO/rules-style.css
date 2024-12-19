@@ -1,0 +1,75 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+/* Container */
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Rules title */
+.rules-title {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: header-glow 2s infinite alternate;
+}
+
+.rules-subtitle {
+  font-size: 1.2rem;
+  color: #a9d6e5;
+}
+
+/* Rules content */
+.rules-content {
+  margin: 20px;
+  font-size: 1.2rem;
+  text-align: left;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Back button */
+.back-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+}
+
+.back-button:active {
+  transform: scale(1);
+  background-color: #023e8a;
+}
+
+/* Header glow animation */
+@keyframes header-glow {
+  from {
+    text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8, 0 0 30px #00b4d8;
+  }
+  to {
+    text-shadow: 0 0 20px #0077b6, 0 0 30px #0077b6, 0 0 40px #0077b6;
+  }
+}
